@@ -1,0 +1,114 @@
+.lv-menuButton {
+    position: relative;
+    padding-left: 1.25em;
+}
+.lv-menuButton:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1em;
+    height: 0.15em;
+    background: orange;
+    box-shadow: 
+    0 0.25em 0 0 orange,
+    0 0.5em 0 0 orange;
+}
+.lv-menu{
+    background: #47a3da;
+    position: fixed;
+}
+.lv-menu h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: #0d77b6;
+}
+.lv-menu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.lv-menu a:hover {
+    background: #258ecd;
+}
+.lv-menu a:active{
+    background: #afdefa;
+    color: #47a3da;
+}
+.lv-menu-left {
+    left: -240px;
+}
+.lv-menu-left.lv-menu-open {
+    left: 0px;
+}
+.lv-menu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+.lv-menu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.lv-menu-push-toright {
+    left: 240px;
+}
+
+.lv-menu-push-toleft {
+    left: -240px;
+}
+
+/* Transitions */
+
+.lv-menu,
+.lv-menu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+    .lv-menu-horizontal {
+        font-size: 75%;
+        height: 110px;
+    }
+
+    .lv-menu-top {
+        top: -110px;
+    }
+
+    .lv-menu-bottom {
+        bottom: -110px;
+    }
+
+}
+
+@media screen and (max-height: 26.375em){
+
+    .lv-menu-vertical {
+        font-size: 90%;
+        width: 190px;
+    }
+
+    .lv-menu-left,
+    .lv-menu-push-toleft {
+        left: -190px;
+    }
+
+    .lv-menu-right {
+        right: -190px;
+    }
+
+    .lv-menu-push-toright {
+        left: 190px;
+    }
+}
